@@ -7,3 +7,13 @@
 (global-unset-key [(control z)])
 (global-unset-key [(control x)(control z)])
 
+import unittest
+
+class MyTest(unittest.TestCase):
+    def test(self):
+        print 'basic'
+        self.assertEqual(fun(3), 4)
+    def test2(self):
+        print 'basic2'
+        self.assertEqual(fun(4), 6)
+unittest.main()
